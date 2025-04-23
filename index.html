@@ -34,35 +34,6 @@
       <form action="#" method="post">
         <!-- Add your form action URL here -->
         <div class="options-grid">
-          <label for="resubscribe" class="option-card">
-            <input
-              type="radio"
-              id="resubscribe"
-              name="subscription_preference"
-              value="all"
-            />
-
-            <h5 class="option-title">Get All Updates – Morning & Afternoon</h5>
-            <span class="option-description"
-              >Stay fully connected with both daily emails, just like
-              before.</span
-            >
-          </label>
-
-          <label for="once_day" class="option-card">
-            <input
-              type="radio"
-              id="once_day"
-              name="subscription_preference"
-              value="morning"
-            />
-
-            <h5 class="option-title">Morning Only – Once a Day</h5>
-            <span class="option-description"
-              >One email each morning with the most important stories.</span
-            >
-          </label>
-
           <label for="once_week" class="option-card">
             <input
               type="radio"
@@ -72,26 +43,45 @@
               checked
             />
             <!-- Default checked here -->
-
-            <h5 class="option-title">Sunday Edition Only – Once a Week</h5>
-            <span class="option-description"
-              >Just one email every Sunday with our top stories of the
-              week.</span
-            >
+            <div class="option-text-wrap">
+              <h5 class="option-title">Sunday Edition Only – Once a Week</h5>
+              <span class="option-description"
+                >Just one email every Sunday with our top stories of the
+                week.</span
+              >
+            </div>
           </label>
-
-          <label for="unsubscribed" class="option-card">
+          <label for="once_day" class="option-card">
             <input
               type="radio"
-              id="unsubscribed"
+              id="once_day"
               name="subscription_preference"
-              value="none"
+              value="morning"
             />
+            <div class="option-text-wrap">
+              <h5 class="option-title">Morning Only – Once a Day</h5>
+              <span class="option-description"
+                >One email each morning with the most important stories.</span
+              >
+            </div>
+          </label>
 
-            <h5 class="option-title">No Thanks – Keep Me Unsubscribed</h5>
-            <span class="option-description"
-              >You won’t receive any more emails from us.</span
-            >
+          <label for="resubscribe" class="option-card">
+            <input
+              type="radio"
+              id="resubscribe"
+              name="subscription_preference"
+              value="all"
+            />
+            <div class="option-text-wrap">
+              <h5 class="option-title">
+                Get All Updates – Morning & Afternoon
+              </h5>
+              <span class="option-description"
+                >Stay fully connected with both daily emails, just like
+                before.</span
+              >
+            </div>
           </label>
         </div>
 
@@ -99,19 +89,23 @@
           <button type="submit" class="btn btn-primary">
             <h5>Save my email preferences</h5>
           </button>
-          <button
-            type="button"
-            class="btn btn-secondary"
-            onclick="window.open('https://seniorsdiscountclub.com.au/misc/contact', '_blank')"
-          >
-            <h5>Send us a message</h5>
+          <button type="button" class="btn btn-secondary">
+            <h5>Stay unsubscribed</h5>
           </button>
           <!-- Use type="button" if it doesn't submit the form, or change to an <a> link if needed -->
         </div>
       </form>
 
       <p class="footer-note">
-        Changed your mind later? You can update your preferences any time.
+        Changed your mind later? You can update your preferences any time. Need
+        help?
+        <a
+          class="contact-url"
+          href="https://seniorsdiscountclub.com.au/misc/contact"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Send us a message</a
+        >
       </p>
     </main>
 
