@@ -34,7 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Use 'change' event as it's more reliable for radio buttons
     radio.addEventListener("change", updateSelection);
   });
+  const form = document.querySelector("form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    window.location.href = "confirm_update_page.html";
+  });
 
+  // Handle "Stay unsubscribed" button click
+  const stayUnsubscribedBtn = document.getElementById("stayUnsubscribed");
+  stayUnsubscribedBtn.addEventListener("click", () => {
+    window.location.href = "confirm_unsub_page.html";
+  });
   // Initial call to set the border on the default selected option on page load
   updateSelection();
 });
